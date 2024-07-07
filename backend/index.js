@@ -5,6 +5,7 @@ require('dotenv').config();
 const cors = require('cors');
 const EmployeeRoutes = require('./Routes/EmployeeRoutes');
 const PORT = process.env.PORT || 8080;
+
 require('./Models/db');
 app.use(cors());
 app.use(bodyParser.json());
